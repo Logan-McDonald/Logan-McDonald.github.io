@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logan McDonald</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <div class="logo">Logan McDonald</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Logan McDonald</div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="profile.html" onclick="toggleMenu()">Profile</a></li>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-container">
+      <div class="section-pic-container">
+        <img src="./assets/headshot.jpg" alt="Logan McDonald profile pic">
+      </div>
+      
+      <div class="section-text">
+        <h1 class="title">Hi, I'm Logan McDonald</h1>
+        <p>Software Engineer</p>
+        <div class="btn-container">
+          <button onclick="window.open('./assets/ljm-resume.pdf')">
+            Resume
+          </button>
+          <button onclick="location.href='https://github.com/Logan-McDonald'">
+            GitHub
+          </button>
+          <button onclick="location.href='https://www.linkedin.com/in/ljmcdonald78'">
+            LinkedIn
+          </button>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section-pic-container">
+        <img src="./assets/unl-logo.jpg" alt="UNL Logo">
+      </div>
+      <p>
+        I am currently a Software Engineering student at the University of Nebraska-Lincoln with a passion for 
+        full-stack development and solving complex problems through collaboration. Driven by a desire to create 
+        impactful solutions, I thrive in team environments where I can contribute to meaningful projects, 
+        continuously learn, and grow as a developer.
+      </p>
+    </div>
+    
+  </section>
+
+  <section id="experience">
+    <h1 class="title">Experience</h1>
+    <h3><em>Product Owner (Intern)</em></h3>
+    <ul>
+        <li>Working closely with developers and marketing teams to draft comprehensive user stories in Jira, ensuring developers clearly understand technical requirements and reduce the likelihood of production errors.</li>
+        <li>Leading and actively participating in sprint refinement, planning, and retrospective meetings to optimize team workflows, while translating marketing department requests into actionable technical tasks for developers.</li>
+        <li>Working alongside other product owners to develop solutions for various company challenges, including enhancing client acquisition strategies and translating marketing requests into actionable development tasks.</li>
+    </ul>
+    <h3><em>Application Developer (Intern)</em></h3>
+    <ul>
+        <li>Developed and refined system documentation by updating and creating ER diagrams, improving clarity and organization for cross-functional teams.</li>
+        <li>Built and implemented web development features, including a social media sharing widget for our company blog posts using Node.js, enhancing user engagement and content distribution.</li>
+        <li>Researched third-party integrations, including Instagram embed widgets and PDF reading tools, and evaluated software solutions like HubSpot to support company decision-making.</li>
+        <li>Collaborated on a Capstone project with co-workers exploring AI integration (Coveo) within Hightower's enterprise system, researching implementation strategies and cost analysis for AI-powered solutions.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h1 class="title">Skills</h1>
+    <table>
+      <tr>
+        <th>Programming Languages</th>
+        <td>Python, Java, C, CSS, JavaScript, TypeScript, Go, Prolog, Haskell, HTML</td>
+      </tr>
+      <tr>
+        <th>Frameworks/Databases</th>
+        <td>Django, Express, HTMX, React, Node, Flask, MongoDB, MySQL, PostgreSQL</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <header class="bottom-bar">
+    <div class="container">
+
+      <div class="feedback">
+        <span>Leave a review:</span>
+        <div class="stars">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+      </div>
+
+      <div class="feedback-popup">
+        <h3>Your Review</h3>
+        <textarea placeholder="Write your feedback here..."></textarea>
+        <button>Submit</button>
+      </div>
+
+    </div>
+  </header>
+
+  <script src="functions.js"></script>
+</body>
+</html>
