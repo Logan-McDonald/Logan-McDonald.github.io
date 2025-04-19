@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Logan McDonald</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js"></script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"><a href="index.html">Logan McDonald</a></div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo"><a href="index.html">Logan McDonald</a></div>
+  </nav>
+
+  <section class="container">
+    <div class="profile">
+      <div class="about">
+        <form action="register.php" method="POST">
+          <h2>Register Contact Info</h2>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="first">First Name:</label>
+          <input type="text" id="first" name="first"><br><br>
+
+          <label for="last">Last Name:</label>
+          <input type="text" id="last" name="last"><br><br>
+
+          <label for="number">Phone Number:</label>
+          <input type="text" id="number" name="number"><br><br>
+
+          <label for="address">Address:</label>
+          <input id="address" name="address"></input><br><br>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <header class="bottom-bar">
+      <div class="container">
+
+        <div class="feedback">
+          <span>Leave a review:</span>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+
+        <div class="feedback-popup">
+          <h3>Your Review</h3>
+          <textarea placeholder="Write your feedback here..."></textarea>
+          <button>Submit</button>
+        </div>
+
+      </div>
+    </header>
+
+</body>
+
+</html>
